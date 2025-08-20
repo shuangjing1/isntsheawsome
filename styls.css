@@ -1,0 +1,414 @@
+@font-face {
+ font-family: "Sour Gummy";
+  src:url(Plaster,Sour_Gummy/Sour_Gummy/SourGummy.ttf)
+} 
+
+@font-face {
+ font-family: "Plaster";
+  src:url(Plaster,Sour_Gummy/Plaster/Plaster-Regular.ttf)
+} 
+
+:root {
+    --text-color:#1a1c20;
+    --link-color:#7db7e3;
+    --background-color:#f4f4f4;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/*NAVBAR*/
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    background-color: #aaaaaa;
+    border-radius: 15px;
+}
+
+nav .left a {
+    font-family: 'Plaster',sarif;
+    color: var(--background-color);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+nav .middle a {
+  font-family: 'Sour Gummy',sarif;
+  color: var(--background-color);
+  font-size: 20px;
+}
+
+nav .right a {
+  font-family: 'Sour Gummy',sarif;
+  color: var(--background-color);
+  font-size: 20px;
+}
+
+/* SECTION 1: GREETINGS */
+.greetings {
+  padding: 0 50px;
+  gap: 40px;
+}
+
+.greetings svg {
+   float: right;
+   margin-right: 5%;
+   margin-top: 25px;
+   width: 10%;
+   height: 10%;
+}
+
+.greetings .text {
+  font-family: 'Sour Gummy',sarif;
+  flex: 5;
+  margin: 10px 30% 50px 15%;
+}
+
+.greetings .text h2 {
+  font-size: 37px;
+  font-weight: 350;
+  margin: 5% 0;
+}
+
+.greetings .text p {
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+  font-weight: 300;
+}
+
+.menu {
+width: 100%;
+overflow: auto;
+text-align: center;
+}
+
+.menu a {
+  text-align: center;
+  color: var(--text-color);
+  padding: 0 2px;
+  font-family: 'Sour Gummy';
+  font-size: 24px;
+  transition: .1s;
+}
+
+.menu a:hover {
+  color: var(--link-color);
+}
+
+/* SECTION 2 PROJECTS */
+
+.projects h2 {
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-family: 'Sour Gummy', sarif;
+    font-size: 36px;
+}
+
+.projects .odd {
+  display: flex;
+  align-items: center;
+  padding: auto 20%;
+}
+
+.projects .odd .text{
+    width: 40%;
+    margin: 30px 20px 80px 15%;
+    order: 1;
+}
+
+.projects .odd .text a{
+    color: var(--text-color);
+    font-family: 'Sour Gummy', sarif;
+    margin: 10px 0;
+    font-size: 25px;
+    transition: .1s;
+}
+
+.projects .odd .text a:hover {
+  color: var(--link-color);
+}
+
+
+.projects .text .intro {
+    font-family: 'Sour Gummy', sarif;
+    margin: 10px 0;
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.projects .text .labels {
+    margin: 10px 0;
+    font-family: 'Sour Gummy', sarif;
+    font-size: 20px;
+    color: #787878;
+    font-weight: 200
+}
+
+.projects .odd .cover {
+  margin: 30px 15% auto 20px;
+  order: 2;
+}
+
+.projects .odd .cover img{
+  width: 450px;
+  border: 5px dashed #878787;
+  border-radius: 15px;
+}
+
+/* even */
+
+.projects .even {
+  display: flex;
+  align-items: center;
+  padding: auto 20%;
+}
+
+.projects .even .cover {
+  margin: 30px 20px auto 15%;
+}
+
+.projects .even .cover img{
+  width: 450px;
+  border: 5px dashed #878787;
+  border-radius: 15px;
+}
+
+.projects .even .text{
+    width: 40%;
+    margin: 30px 15% 80px 20px;
+}
+
+.projects .even .text a{
+    color: var(--text-color);
+    font-family: 'Sour Gummy', sarif;
+    margin: 10px 0;
+    font-size: 25px;
+    transition: .1s;
+}
+
+.projects .even .text a:hover {
+  color: var(--link-color);
+}
+
+.footer {
+    width: 100%;
+    align-items: center;
+    padding: 30px 0;
+    height: 80px;
+    background-color: #aaaaaa;
+    border-radius: 15px;
+}
+
+.footer p{
+color: var(--background-color);
+font-family: 'Sour Gummy',sarif;
+font-size: 22px;
+text-align: center;
+}
+
+@media (max-width: 1000px) {
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #aaaaaa;
+    border-radius: 15px;
+}
+
+nav .left a {
+    font-family: 'Plaster',sarif;
+    color: var(--background-color);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+nav .middle a {
+  font-family: 'Sour Gummy',sarif;
+  color: var(--background-color);
+  font-size: 16px;
+}
+
+nav .right a {
+  font-family: 'Sour Gummy',sarif;
+  color: var(--background-color);
+  font-size: 16px;
+}
+
+.greetings .text {
+  font-family: 'Sour Gummy',sarif;
+  flex: 5;
+  margin: 80px 30% 50px 15%;
+}
+
+.projects .odd {
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects .odd .cover {
+  width: 60%;
+  margin: 30px 20%;
+  order: 1;
+}
+
+.projects .odd .text{
+    width: 60%;
+    margin: 30px 20%;
+    order: 2;
+}
+
+.projects .even {
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects .even .cover {
+  width: 60%;
+  margin: 30px 20%;
+  order: 1;
+}
+
+.projects .even .text{
+    width: 60%;
+    margin: 30px 20%;
+    order: 2;
+}
+}
+
+@media (max-width: 500px) {
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background-color: #aaaaaa;
+    border-radius: 15px;
+}
+
+nav .left a {
+    font-family: 'Plaster',sarif;
+    color: var(--background-color);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+nav .middle a {
+  font-family: 'Sour Gummy',sarif;
+  color: var(--background-color);
+  font-size: 15px;
+}
+
+nav .right a {
+  font-family: 'Sour Gummy',sarif;
+  color: var(--background-color);
+  font-size: 15px;
+}
+
+nav a span {
+  display: none;
+}
+
+.greetings .text {
+  font-family: 'Sour Gummy',sarif;
+  margin: 80px 10px 50px 10px;
+  font-size: 14px;
+}
+
+.greetings svg {
+   display: none;
+}
+
+.menu a {
+  text-align: center;
+  color: var(--text-color);
+  padding: 0 2px;
+  font-family: 'Sour Gummy';
+  font-size: 20px;
+  transition: .1s;
+}
+
+.projects .odd {
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects .odd .cover {
+  width: 300px;
+  margin: 30px auto;
+  order: 1;
+}
+
+.projects .odd .cover img{
+  width: 300px;
+  border: 3px dashed #878787;
+  border-radius: 15px;
+}
+
+.projects .odd .text{
+    width: 300px;
+    margin: 30px auto;
+    order: 2;
+}
+
+.projects .even {
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects .even .cover {
+  width: 300px;
+  margin: 30px auto;
+  order: 1;
+}
+
+.projects .even .cover img{
+  width: 300px;
+  border: 3px dashed #878787;
+  border-radius: 15px;
+}
+
+.projects .even .text{
+    width: 300px;
+    margin: 30px auto;
+    order: 2;
+}
+
+.footer p{
+color: var(--background-color);
+font-family: 'Sour Gummy',sarif;
+font-size: 15px;
+text-align: center;
+}
+
+}
